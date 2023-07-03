@@ -22,6 +22,7 @@ public class PersonHandler {
         {
             String currentperson = personArray[i].toString();
             result+=currentperson;
+            i++;
         }
         // while `counter` is less than length of array
             // begin loop
@@ -41,7 +42,12 @@ public class PersonHandler {
         // identify initial value
         // identify terminal condition
         // identify increment
-        for(int i = 0)
+        for(int i = 0; i<personArray.length;i++)
+        {
+
+            String currentPerson = personArray[i].toString();
+            result+=currentPerson;
+        }
         // use the above clauses to declare for-loop signature
             // begin loop
                 // use `counter` to identify the `current Person` in the array
@@ -56,6 +62,13 @@ public class PersonHandler {
 
     public String forEachLoop() {
         String result = "";
+
+
+
+        for(Person person: personArray)
+        {
+            result+=person.toString();
+        }
         // identify array's type
         // identify array's variable-name
 
